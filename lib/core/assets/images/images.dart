@@ -40,4 +40,6 @@ class Images {
   static String profile = "$baseAssetsImagesIconsUrl/profile.png";
   static String profileFill = "$baseAssetsImagesIconsUrl/profile_fill.png";
   static String mapIcon = "$baseAssetsImagesIconsUrl/map.png";
+  static String humanIcon = "$baseAssetsImagesIconsUrl/OIP.jpg";
+  static String travelIcon = "$baseAssetsImagesIconsUrl/travel_icon.png";
 }

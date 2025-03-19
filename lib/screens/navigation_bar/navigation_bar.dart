@@ -29,18 +29,15 @@ class NavigationBarPage extends StatelessWidget {
       builder: (context, state) {
         return Scaffold(
           backgroundColor: Colors.white,
-          // body: PageView(
-          //   controller: cubit.controller,
-          //   physics: const AlwaysScrollableScrollPhysics(),
-          //   onPageChanged: (index) => cubit.pageChange(index),
-          //   children: cubit.pages,
-          // )
           body: cubit.pages[cubit.currentIndex],
-          floatingActionButton: NavigationBarWalletIcon(
-              text: "Wallet",
-              index: 2,
-              image: Images.wallet,
-              selectedImage: Images.walletFill),
+          floatingActionButton: MediaQuery.of(context).viewInsets.bottom == 0
+              ? NavigationBarWalletIcon(
+            text: "Wallet",
+            index: 2,
+            image: Images.wallet,
+            selectedImage: Images.walletFill,
+          )
+              : const SizedBox(),
           floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
           bottomNavigationBar: Container(
             height: height(context) / 10,
@@ -83,42 +80,3 @@ class NavigationBarPage extends StatelessWidget {
     );
   }
 }
-// bottomNavigationBar:
-// ValueListenableBuilder(
-//   valueListenable: cubit.currentIndex,
-//   builder: (context, value, c) {
-//     return Container(
-//       height: 140,
-//       decoration: BoxDecoration(
-//         color: Colors.white,
-//         borderRadius: BorderRadius.circular(20),
-//       ),
-//       child: BottomNavigationBar(
-//         showSelectedLabels: true,
-//         elevation: 0,
-//         type: BottomNavigationBarType.fixed,
-//         enableFeedback: false,
-//         showUnselectedLabels: true,
-//         unselectedItemColor: Colors.black,
-//         selectedItemColor: AppColors.primary500,
-//         unselectedLabelStyle: const TextStyle(
-//           fontWeight: FontWeight.w500,
-//           fontFamily: fontPoppins,
-//           fontSize: 12,
-//         ),
-//         selectedLabelStyle: const TextStyle(
-//           fontWeight: FontWeight.w600,
-//           fontFamily: fontPoppins,
-//           fontSize: 12,
-//         ),
-//         currentIndex: cubit.currentIndex.value,
-//         backgroundColor: Colors.white,
-//         selectedFontSize: 12,
-//         unselectedFontSize: 12,
-//         iconSize: 28,
-//           onTap: (index) => cubit.onBottomTapped(index),
-//         items: bottomNavigationBarItems,
-//       ),
-//     );
-//   },
-// ),

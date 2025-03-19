@@ -5,7 +5,7 @@ import 'package:driver/core/screen%20size/screen_size.dart';
 import '../text/text_style.dart';
 
 MaterialButton primaryButton(
-    BuildContext context, String text, Function onTap) {
+    BuildContext context, String text, onTap) {
   return MaterialButton(
     onPressed: () => onTap(),
     color: AppColors.primary500,

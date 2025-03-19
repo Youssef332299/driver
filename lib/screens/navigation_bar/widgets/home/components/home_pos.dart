@@ -1,8 +1,7 @@
+import 'package:driver/core/screen%20size/screen_size.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-
-import '../../../../../core/colors/app_colors.dart';
 import '../cubit/home_cubit.dart';
 
 class HomePos extends StatelessWidget {
@@ -13,9 +12,13 @@ class HomePos extends StatelessWidget {
     HomeCubit cubit = BlocProvider.of<HomeCubit>(context);
 
     return Positioned(
-      top: 40,
-      left: 15,
+      bottom: height(context) / 2.8,
+      right: 25,
+      height: 35,
+      width: 35,
       child: FloatingActionButton(
+        backgroundColor: Colors.white,
+        elevation: 0,
         onPressed: () => cubit.mapController?.animateCamera(
           CameraUpdate.newCameraPosition(
             CameraPosition(target: cubit.currentLocation!, zoom: 15),
@@ -23,7 +26,8 @@ class HomePos extends StatelessWidget {
         ),
         child: const Icon(
           Icons.my_location,
-          color: AppColors.primary500,
+          color: Colors.black87,
+          size: 18,
         ),
       ),
     );

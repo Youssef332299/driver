@@ -1,12 +1,10 @@
-import 'package:driver/screens/auth/widgets/login/view.dart';
-import 'package:driver/screens/auth/widgets/signup/widgets/complete_profile/view.dart';
-import 'package:driver/screens/auth/widgets/signup/widgets/set_password/view.dart';
 import 'package:driver/screens/navigation_bar/navigation_bar.dart';
+import 'package:driver/screens/navigation_bar/widgets/home/cubit/home_cubit.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:driver/screens/auth/widgets/signup/widgets/otp/view.dart';
-import 'package:driver/screens/splash/view.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:provider/provider.dart';
 import 'core/language/generated/l10n.dart';
 import 'data/firebase/firebase_options.dart';
 
@@ -16,24 +14,28 @@ void main() async {
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
   ]);
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform,);
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-        locale: const Locale('en'),
-        supportedLocales: S.delegate.supportedLocales,
-      home: const NavigationBarPage(),
-      // home: const SplashPage(),
-    );
+    return MultiProvider(
+        providers: [BlocProvider(create: (context) => HomeCubit()..init(context)),],
+        child: MaterialApp(
+          debugShowCheckedModeBanner: false,
+          locale: const Locale('en'),
+          supportedLocales: S.delegate.supportedLocales,
+          home: const NavigationBarPage(),
+          // home: const SplashPage(),
+        ));
   }
 }
-
 
 // web       1:919686196437:web:04a3e458d6f525e6cb865c
 // android   1:919686196437:android:f7ed468ff4d6f0bbcb865c
