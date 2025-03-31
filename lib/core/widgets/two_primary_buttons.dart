@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:driver/core/colors/app_colors.dart';
-import 'package:driver/core/screen%20size/screen_size.dart';
+import '../../../../profile/lib/screen_size.dart';
 
 import '../text/text_style.dart';
 

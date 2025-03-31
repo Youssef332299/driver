@@ -1,4 +1,4 @@
-import 'package:driver/core/screen%20size/screen_size.dart';
+import '../../../../../../../../profile/lib/screen_size.dart';
 import 'package:driver/core/text/text_style.dart';
 import 'package:driver/core/widgets/abb_bar.dart';
 import 'package:driver/core/widgets/circle_progras_indicator.dart';

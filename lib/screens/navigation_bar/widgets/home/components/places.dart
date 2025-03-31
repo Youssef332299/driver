@@ -1,4 +1,4 @@
-import 'package:driver/core/screen%20size/screen_size.dart';
+import '../../../../../../../profile/lib/screen_size.dart';
 import 'package:driver/core/text/text_style.dart';
 import 'package:driver/screens/navigation_bar/widgets/home/cubit/home_cubit.dart';
 import 'package:flutter/material.dart';

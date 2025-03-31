@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../../core/screen size/screen_size.dart';
+import '../../../../../../../profile/lib/screen_size.dart';
 import '../../../../../core/text/text_style.dart';
 import '../cubit/home_cubit.dart';
 

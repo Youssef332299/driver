@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:driver/core/screen%20size/screen_size.dart';
+import '../../../../../../../profile/lib/screen_size.dart';
 import 'package:driver/core/text/text_style.dart';
 
 class SocialSignUp extends StatelessWidget {

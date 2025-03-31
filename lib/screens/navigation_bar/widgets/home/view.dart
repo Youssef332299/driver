@@ -47,7 +47,7 @@ class HomePage extends StatelessWidget {
                     ),
               const HomePos(),
               const RentalButton(),
-              const SearchHomeLocation(),
+              // const SearchHomeLocation(),
             ],
           );
         }));

@@ -1,7 +1,7 @@
 import 'package:driver/core/assets/images/images.dart';
 import 'package:driver/core/colors/app_colors.dart';
 import 'package:driver/core/constants/constants.dart';
-import 'package:driver/core/screen%20size/screen_size.dart';
+import '../../../../../../../profile/lib/screen_size.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -46,7 +46,7 @@ class SearchHomeLocation extends StatelessWidget {
                 border: Border.all(color: AppColors.primary200),
               ),
               child: TextField(
-                onTap: () => cubit.onTapSearchFiled(context),
+                onTap: () => cubit.onTapRental(context),
                 canRequestFocus: false,
                 decoration: InputDecoration(
                   enabledBorder: outlineInputBorder,

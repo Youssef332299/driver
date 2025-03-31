@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:driver/core/assets/images/images.dart';
 import 'package:driver/core/navigation/navigation.dart';
-import 'package:driver/core/screen%20size/screen_size.dart';
+import '../../../../../../profile/lib/screen_size.dart';
 import 'package:driver/core/widgets/primary_button.dart';
 import 'package:driver/screens/auth/widgets/login/view.dart';
 import 'package:driver/screens/auth/widgets/signup/view.dart';

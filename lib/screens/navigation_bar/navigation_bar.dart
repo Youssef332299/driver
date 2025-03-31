@@ -1,7 +1,7 @@
 import 'package:driver/core/assets/images/images.dart';
 import 'package:driver/core/colors/app_colors.dart';
 import 'package:driver/core/constants/constants.dart';
-import 'package:driver/core/screen%20size/screen_size.dart';
+import '../../../../profile/lib/screen_size.dart';
 import 'package:driver/screens/navigation_bar/components/bottom_navigation_bar_item.dart';
 import 'package:driver/screens/navigation_bar/components/navigation_bar_wallet_icon.dart';
 import 'package:driver/screens/navigation_bar/components/navigation_icon_image.dart';
@@ -41,6 +41,7 @@ class NavigationBarPage extends StatelessWidget {
           floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
           bottomNavigationBar: Container(
             height: height(context) / 10,
+            width: width(context)/ 5,
             color: Colors.white,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,

@@ -1,4 +1,4 @@
-import 'package:driver/core/screen%20size/screen_size.dart';
+import '../../../../../../../../profile/lib/screen_size.dart';
 import 'package:driver/core/widgets/circle_progras_indicator.dart';
 import 'package:driver/core/widgets/snack_bar.dart';
 import 'package:driver/core/widgets/two_primary_buttons.dart';

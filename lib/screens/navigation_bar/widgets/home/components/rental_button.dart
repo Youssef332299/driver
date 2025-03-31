@@ -1,4 +1,4 @@
-import 'package:driver/core/screen%20size/screen_size.dart';
+import '../../../../../../../profile/lib/screen_size.dart';
 import 'package:driver/screens/navigation_bar/widgets/home/cubit/home_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -10,16 +10,14 @@ class RentalButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final cubit = context.read<HomeCubit>();
-
     return Positioned(
-      bottom: height(context) / 3.8,
-        right: width(context) / 1.76,
+      bottom: 9,
+        right: width(context) / 1.5,
         child: GestureDetector(
-          onTap: () => context.read<HomeCubit>(),
+          onTap: () => context.read<HomeCubit>().onTapRental(context),
           child: Container(
             height: 50,
-            width: 150,
+            width: width(context) / 3.3,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
               color: AppColors.primary700

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:driver/core/assets/images/images.dart';
-import 'package:driver/core/screen%20size/screen_size.dart';
+import '../../../../../profile/lib/screen_size.dart';
 import '../cubit/on_boarding_cubit.dart';
 import '../cubit/on_boarding_state.dart';
 

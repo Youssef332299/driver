@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:driver/screens/onboarding/cubit/on_boarding_cubit.dart';
 
-import '../../../core/screen size/screen_size.dart';
+import '../../../../../profile/lib/screen_size.dart';
 import '../../../core/text/text_style.dart';
 
 class SkipButton extends StatelessWidget {

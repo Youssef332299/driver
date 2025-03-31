@@ -1,4 +1,4 @@
-import 'package:driver/core/screen%20size/screen_size.dart';
+import '../../../../../../../profile/lib/screen_size.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -12,10 +12,10 @@ class HomePos extends StatelessWidget {
     HomeCubit cubit = BlocProvider.of<HomeCubit>(context);
 
     return Positioned(
-      bottom: height(context) / 2.8,
+      bottom: 15,
       right: 25,
-      height: 35,
-      width: 35,
+      height: 40,
+      width: 40,
       child: FloatingActionButton(
         backgroundColor: Colors.white,
         elevation: 0,
@@ -27,7 +27,7 @@ class HomePos extends StatelessWidget {
         child: const Icon(
           Icons.my_location,
           color: Colors.black87,
-          size: 18,
+          size: 22,
         ),
       ),
     );

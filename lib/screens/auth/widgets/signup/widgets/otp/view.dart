@@ -2,7 +2,7 @@ import 'package:driver/screens/auth/widgets/signup/widgets/otp/components/otp_te
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter/services.dart';
-import 'package:driver/core/screen%20size/screen_size.dart';
+import '../../../../../../../../profile/lib/screen_size.dart';
 import 'package:driver/core/widgets/abb_bar.dart';
 import 'package:driver/core/widgets/primary_button.dart';
 import 'package:driver/screens/auth/widgets/signup/cubit/sign_up_cubit.dart';

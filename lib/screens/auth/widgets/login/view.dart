@@ -1,5 +1,5 @@
 import 'package:driver/core/navigation/navigation.dart';
-import 'package:driver/core/screen%20size/screen_size.dart';
+import '../../../../../../profile/lib/screen_size.dart';
 import 'package:driver/core/text/text_style.dart';
 import 'package:driver/screens/auth/widgets/login/components/dont_have_account.dart';
 import 'package:driver/screens/auth/widgets/login/widgets/send_verification/send_verification.dart';

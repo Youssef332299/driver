@@ -210,7 +210,7 @@ class HomeCubit extends Cubit<HomeState> {
     var result = await getPredictions(input: value);
     places = List.from(result);
     for(int i =0; i < result.length; i++){
-      var placeDataModel = await getPlaceData(placeId: places[i].placeId.toString());
+      PlaceDataModel placeDataModel = await getPlaceData(placeId: places[i].placeId.toString());
       LatLng latLng = LatLng(placeDataModel.geometry.location.lat, placeDataModel.geometry.location.lng);
       distanceList.add(calculateDistance(currentLocation!, latLng) / 1000);
     }
@@ -386,7 +386,7 @@ class HomeCubit extends Cubit<HomeState> {
     );
   }
 
-  onTapSearchFiled(context) {
+  onTapRental(context) {
     showModalBottomSheet(
         context: context,
         backgroundColor: Colors.white,

@@ -1,4 +1,4 @@
-import 'package:driver/core/screen%20size/screen_size.dart';
+import '../../../../../../../../profile/lib/screen_size.dart';
 import 'package:driver/core/widgets/primary_button.dart';
 import 'package:driver/screens/auth/widgets/login/widgets/send_verification/components/log_in_phone_number_filed.dart';
 import 'package:driver/screens/auth/widgets/login/cubit/login_cubit.dart';
